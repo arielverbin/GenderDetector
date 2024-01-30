@@ -25,11 +25,11 @@ The [ReportPaper.pdf](ReportPaper.pdf) file in this repository contains a compre
 
 
 ## Getting Started
-1. Clone the repository into your local device (using ```git clone https://github.com/arielverbin/GenderDetector.git```)
-2. Make sure you have downloaded all of the necessary dependencies (pytorch, torchvision, PIL etc.).
+1. Clone the repository into your local device (using ```git clone https://github.com/arielverbin/GenderDetector.git```).
+2. Make sure you have installed all of the necessary dependencies (pytorch, torchvision, PIL etc.).
 3. In order to use our final trained model, run the [predict.py](GenderDetector/predict.py) script using ```python3 GenderDetector/predict.py```.
 4. You can also use the python server for GUI:
-   - Start the python server using ```python3 pythonServer/server.py```.
+   - Start the server using ```python3 pythonServer/server.py```.
    - Open the HTML file ```pythonServer/GenderDetector.html``` in your browser.
   
    
