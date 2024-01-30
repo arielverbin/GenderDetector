@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: #f5f5f5 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tip {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    position: relative;
+    bottom: 20px;
+    font-size: 12px;
+    color: #818181;
+}
+
+.content-container {
+    background-color: #fff;
+    padding: 40px 20px 20px 20px !important;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px !important;
+    color: #2d2d2d;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#image-preview {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    width: 250px;
+    height: 250px;
+
+    margin: 30px;
+    cursor: pointer;
+
+    background-image: url("plus-icon.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/* CSS */
+#predict-button {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 0 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-color: #FF512F;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#predict-button:disabled {
+    background-color: gray !important;
+    background-image: none;
+    transition: .5s;
+    box-shadow: none;
+    cursor: default;
+}
+#predict-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#predict-button:active {
+    transform: scale(0.95);
+}
+
+
+#remove-picture {
+    background-image: url("x.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    top: 5px;
+}
+
+#remove {
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    position: relative;
+    left: 15px;
+    top: 15px;
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+.prediction {
+    position: absolute !important;
+}
+
+.modal-body {
+    position: relative;
+    left: 11px;
+    height: 300px;
+    width: 100%;
+}
+#predicted-image {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.result-prediction {
+    text-align: center;
+}
+
+#gender-prediction {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#prediction-probability {
+    margin-top: 0;
+}
+
+#gender-img {
+    height: 40px;
+}
+
+.prediction-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+#credit {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: -1;
+    padding: 10px 20px 40px 20px;
+    transition: 0.5s;
+}
