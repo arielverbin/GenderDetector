@@ -7,6 +7,7 @@ This repository contains a PyTorch implementation of the ResNet18 architecture f
   <img src="images/dani.png" alt="example2" width="300">
   <img src="images/jennifer.png" alt="example3" width="300">
   <img src="images/angelina.png" alt="example1" width="300">
+    <img src="images/brad.png" alt="example4" width="300">
 </p>
 
 ### Model Performance on Test Set (Using [CelebFaces](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset/) Dataset)
